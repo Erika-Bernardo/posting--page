@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Post</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://static.vecteezy.com/ti/fotos-gratis/p1/1817359-close-up-de-uma-pessoa-escrevendo-em-um-caderno-gratis-foto.jpg" alt="Logo" class="logo-img">
+            <div class="logo">Criação de Post</div>
+        </div>
+    </header>
+  
+    <div id="container">
+        <form id="post-form">
+            <input type="text" id="titulo" placeholder="Título do post" required>
+            <textarea id="conteudo" placeholder="Escreva seu post aqui..." required></textarea>
+            <button type="button" id="visualizar">Visualizar</button>
+            <button type="submit" id="postar" disabled>Postar</button>
+        </form>
+        <div id="post-container" class="hidden">
+            <h2 id="renderizador-titulo"></h2>
+            <p id="renderizador-conteudo"></p>
+        </div>
+    </div>
+    <h2>Últimos 10 Posts</h2>
+    <div id="posts-list"></div>
+    <script src="main.js"></script>
+    <footer>
+        <p>&copy;Criação de Post - Todos os direitos reservados.</p>
+        <p>👩‍💻 Site Criado por: Érika Jorge.</p>
+    </footer>
+</body>
+</html>
